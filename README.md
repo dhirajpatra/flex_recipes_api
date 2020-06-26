@@ -25,16 +25,10 @@ composer.lock file will be sufficient).
 - Any installation, build steps, testing and usage instructions MUST be provided in a `README.md` file in the root of the application.
 
 ## Framework
-Use the `Symfony micro framework` (https://symfony.com/doc/current/setup.html) to create the application API. 
+Use the `Symfony micro framework` Flex (https://symfony.com/doc/current/setup.html) to create the application API. 
 
 ## Application Data
 For the purpose of this task, the application should simply read data from 2 x JSON files. The contents for these files can be found [here](src/App/Ingredient/data.json) and [here](src/App/Recipe/data.json).
- 
-## Submission
-The application should be committed to a __public repository__ on `GitHub` or `BitBucket` (`<lastname>-<firstname>-techtask-php`) and simply send us a link to the repository.
-
-## Bonus
-Configure a `Docker` environment so that we can test and run the application quickly. The application should be installed with a single command.
 
 ## How to install
 `git pull {repoaddress}`
