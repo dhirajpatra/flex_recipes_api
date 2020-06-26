@@ -1,24 +1,10 @@
 # flex_recipes_api
 This is a small php symfony flex based api back end
 
-__Language :__ English | [Bahasa Indonesia](README_ID.md)
+__Language :__ English 
 
 # PHP Technical Task
 Suggested recipes for lunch API
-
-## Time management
-There is no deadline to do this tech task. It's up to you how you manage your time to accomplish at least the requirements.
-
-## Assessment
-
-Our assessment criteria will pay attention on:
-- How the application is structured.
-- Code quality (Clean code).
-- Quality of tests.
-- Interpretation of the problem.
-- Use of `git`.
-- Implementation and final execution.
-- Commits, as this will allow us to understand some of the decisions you make throughout the process.
 
 ## User Story
 As a User I would like to make a request to an API that will determine from a set of recipes what I can have for lunch today based on the contents of my fridge, so that I quickly decide what I’ll be having.
