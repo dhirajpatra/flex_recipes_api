@@ -1,5 +1,5 @@
 # flex_recipes_api
-This is a small php symfony flex based api back end
+This is a small php symfony flex based api back end. Using PHP Symfony based Flex as MVC and used Docker to install and run the application.
 
 __Language :__ English 
 
