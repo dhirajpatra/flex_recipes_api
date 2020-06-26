@@ -50,3 +50,5 @@ Configure a `Docker` environment so that we can test and run the application qui
 http://localhost/api/lunch/{best-before}/{use-by}
 eg. http://localhost/api/lunch/2019-03-07/2019-03-10
 
+## issue regarding permission if any
+`sudo chmod -R 775 code`

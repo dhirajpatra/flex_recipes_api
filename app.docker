@@ -11,3 +11,5 @@ COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
 COPY composer.lock composer.json /var/www/
 CD /var/www
 RUN composer install
+
+RUN chmod 775 /var/wwww
