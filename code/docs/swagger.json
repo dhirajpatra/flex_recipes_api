@@ -1,0 +1,88 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is a simple API",
+    "version" : "1.0.0",
+    "title" : "Simple Lunch Recipes API",
+    "contact" : {
+      "email" : "dhiraj.patra@gmail.com"
+    },
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/dhirajpatra/loadsmile/1.0.0",
+  "tags" : [ {
+    "name" : "me",
+    "description" : "Operations available to all"
+  } ],
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/lunch" : {
+      "get" : {
+        "tags" : [ "me" ],
+        "summary" : "searches ingredients",
+        "description" : "By passing in the appropriate options, you can search for recipes based on available ingredients in your fridge",
+        "operationId" : "prepareRecipes",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "use-by",
+          "in" : "query",
+          "description" : "Given that an ingredient is past its `use-by` date (inclusive), I should not receive recipes containing this ingredient",
+          "required" : true,
+          "type" : "string",
+          "format" : "YYYY-MM-DD"
+        }, {
+          "name" : "best-before",
+          "in" : "query",
+          "description" : "Given that an ingredient is past its `best-before` date (inclusive), but is still within its `use-by` date (inclusive), any recipe containing the oldest (less fresh) ingredient should placed at the bottom of the response object.",
+          "required" : true,
+          "type" : "string",
+          "format" : "YYYY-MM-DD"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "recipes result as per criteria",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Recipe"
+              }
+            }
+          },
+          "400" : {
+            "description" : "bad input parameter"
+          },
+          "404" : {
+            "description" : "api not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Recipe" : {
+      "type" : "object",
+      "properties" : {
+        "title" : {
+          "type" : "string"
+        },
+        "ingredients" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      },
+      "xml" : {
+        "name" : "Recipe"
+      }
+    }
+  },
+  "externalDocs" : {
+    "description" : "Find out more about Swagger",
+    "url" : "http://swagger.io"
+  }
+}

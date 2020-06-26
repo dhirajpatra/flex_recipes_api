@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Unit" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.116079">
+    <testsuite name="tests\App\Controller\RecipeTest" file="/home/dhirajpatra/Desktop/html/php-tech-task/code/tests/App/Controller/RecipeTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.116079">
+      <testcase name="testLunch" class="tests\App\Controller\RecipeTest" classname="tests.App.Controller.RecipeTest" file="/home/dhirajpatra/Desktop/html/php-tech-task/code/tests/App/Controller/RecipeTest.php" line="28" assertions="1" time="0.116079"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
