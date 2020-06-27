@@ -67,6 +67,7 @@ class RecipeController extends AbstractController
                     $this->ingredients = $fresh_ingredients;
 
                     $previous_avg = 0;
+                    $sorted_result = [];
                     foreach ($result as $value) {
                         $total = 0;
                         $avg = 0;
